@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+APLO_WINDOW_NAME="Lua Syntax Check"
+APLO_PARSER_PATH=$TM_BUNDLE_SUPPORT/bin/luaSyntaxCheck
+APLO_DELETE_FILE=1
+
+PATH=/usr/local/bin:$PATH
+
+export APLO_WINDOW_NAME APLO_PARSER_PATH APLO_DELETE_FILE
+
+aploPath=/tmp/aplo$$.aplo
+
+env&gt;$aploPath
+echo $aploPath
+open $aploPath
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
+	<key>name</key>
+	<string>Syntax Check</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.lua</string>
+	<key>uuid</key>
+	<string>1A5CC5CD-10A2-4D52-BDD9-9EEA1CE764FB</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

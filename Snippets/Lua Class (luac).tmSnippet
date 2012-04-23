@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>--============================================================================
+--	Copyright `date +%Y` BITart Gerd Knops,  All rights reserved.
+--
+--	Project	: ${1:`whatProject`}
+--	File	: ${2:${TM_FILENAME:«»}}
+--	Author	: Gerd Knops gerti@BITart.com
+--
+--============================================================================
+--
+--	History:
+--	`date +%y%m%d` Creation of file
+--
+--============================================================================
+--
+--	Description:
+--	${3:«»}
+--
+--============================================================================
+--
+-- DISCLAIMER
+--
+-- BITart and Gerd Knops make no warranties, representations or commitments
+-- with regard to the contents of this software. BITart and Gerd Knops
+-- specifically disclaim any and all warranties, whether express, implied or
+-- statutory, including, but not limited to, any warranty of merchantability
+-- or fitness for a particular purpose, and non-infringement. Under no
+-- circumstances will BITart or Gerd Knops be liable for loss of data,
+-- special, incidental or consequential damages out of the use of this
+-- software, even if those damages were foreseeable, or BITart or Gerd Knops
+-- was informed of their potential.
+--
+--============================================================================
+-- Class Setup
+--============================================================================
+	
+	-- SuperClass
+	require '${4:BAObject}'
+	local super=$4
+	
+	-- New template for our Class
+	${2/(.*)\.lua$/$1/}=$4:new{Class='${2/(.*)\.lua$/$1/}'}
+
+--============================================================================
+-- Class Methods
+--============================================================================
+	
+	$0
+
+--============================================================================
+-- Instance Methods
+--============================================================================
+
+
+--============================================================================
+-- Subroutines
+--============================================================================
+
+--=========================================================================EOF</string>
+	<key>name</key>
+	<string>Lua Class (luac)</string>
+	<key>tabTrigger</key>
+	<string>luac</string>
+	<key>uuid</key>
+	<string>F52DEBF7-BEBA-4E6E-B3AF-943FC807275D</string>
+</dict>
+</plist>
