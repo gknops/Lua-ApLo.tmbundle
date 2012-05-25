@@ -4,7 +4,18 @@
 
 **NOTE**: this bundle does NOT replace the standard Lua bundle, you still need that for the language definition etc.
 
-By default the syntax checker is tied to `⌘S` and the `source.lua` scope, so it will check any Lua file on save.
+## Syntax Check
+
+The Lua syntax check is tied to `callback.document.did-save` semantic class and the `source.lua` scope, so it will check any Lua file on save.
+
+![LuaSyntaxCheck](https://github.com/gknops/Lua-ApLo.tmbundle/raw/master/LuaSyntaxCheck.png)
+
+
+## Run
+
+Running a Lua script using this bundle will create 'clickable' log output if the messages are formatted in a specific way (see the *DEBUG output* section below).
+
+![LuaRun](https://github.com/gknops/Lua-ApLo.tmbundle/raw/master/LuaRun.png)
 
 
 # Installation

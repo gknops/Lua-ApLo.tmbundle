@@ -19,15 +19,12 @@ export APLO_WINDOW_NAME APLO_PARSER_PATH APLO_DELETE_FILE
 aploPath=/tmp/aplo$$.aplo
 
 env&gt;$aploPath
-echo $aploPath
 open $aploPath
 </string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
-	<key>keyEquivalent</key>
-	<string>@s</string>
 	<key>name</key>
 	<string>Syntax Check</string>
 	<key>outputCaret</key>
@@ -38,6 +35,8 @@ open $aploPath
 	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.lua</string>
+	<key>semanticClass</key>
+	<string>callback.document.did-save</string>
 	<key>uuid</key>
 	<string>1A5CC5CD-10A2-4D52-BDD9-9EEA1CE764FB</string>
 	<key>version</key>
